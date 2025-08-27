@@ -1,0 +1,29 @@
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Configuration backups
+*.bak
+*.backup
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Certificate files (if any)
+*.pem
+*.key
+*.crt
+
+# Local test files
+test_*
+local_*
