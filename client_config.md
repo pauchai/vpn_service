@@ -1,12 +1,12 @@
 # 📱 Конфигурация клиента Shadowsocks
 
 ## 🔗 Быстрое подключение
-**SS URL:** `ss://YWVzLTI1Ni1nY206Q3AweUJpQkJjQTN6WFFWaU5SVytUUT09QDY0LjIyNi4xMDIuMTY1OjgzODg=`
+**SS URL:** `ss://EXAMPLE_BASE64_ENCODED_CONFIG`
 
 ## ⚙️ Ручные настройки
-- **Сервер:** `64.226.102.165`
+- **Сервер:** `YOUR_SERVER_IP`
 - **Порт:** `8388`
-- **Пароль:** `Cp0yBiBBcA3zXQViNRW+TQ==`
+- **Пароль:** `YOUR_GENERATED_PASSWORD`
 - **Метод шифрования:** `aes-256-gcm`
 
 ## 📱 Клиенты для установки
@@ -35,11 +35,11 @@ sudo apt install shadowsocks-libev
 # Создать конфигурацию
 sudo tee /etc/shadowsocks-libev/config.json << EOF
 {
-    "server": "64.226.102.165",
+    "server": "YOUR_SERVER_IP",
     "server_port": 8388,
     "local_address": "127.0.0.1",
     "local_port": 1080,
-    "password": "Cp0yBiBBcA3zXQViNRW+TQ==",
+    "password": "YOUR_GENERATED_PASSWORD",
     "timeout": 300,
     "method": "aes-256-gcm"
 }
@@ -58,7 +58,7 @@ ss-local -c /etc/shadowsocks-libev/config.json
 ## ✅ Проверка подключения
 1. Подключитесь к VPN
 2. Откройте [whatismyipaddress.com](https://whatismyipaddress.com)
-3. IP должен быть: `64.226.102.165`
+3. IP должен быть: `YOUR_SERVER_IP`
 
 ## 🌐 Настройка браузера с прокси
 
